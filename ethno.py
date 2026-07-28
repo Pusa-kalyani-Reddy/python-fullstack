@@ -149,43 +149,37 @@ else:
     print("no discount")
 print("final amount",total-discount)'''
 
-def balance():
-    print("\n===== Bank Menu =====")
-    print("1. Check Balance")
-    print("2. Deposit")
-    print("3. Withdraw")
-    print("4. Exit")
 
-def main():
-    balance =10000  
+'''balance=10000
+while True:
+    print("____bank menu___")
+    print("1.bank balance")
+    print("2.deposite")
+    print("3.withdraw")
+    print("4.exit")
+    choose_1=int(input("enter your checking number"))
+    if choose_1==1:
+        print("your balance is:",balance)
+    elif choose_1==2:
+        deposite=int(input("enter amount"))
+        amount=deposite+balance
+        print("your balance after deposite:",amount)
+    elif choose_1==3:
+        withdraw=int(input())
+        if withdraw<balance:
+            balance-amount'''
+            
+            
+            
+            
+'''a=(1,2,3);b=a
+print(a is b)
+print(a is not b)'''
+
+fruits=['apple','mango']
+print('mango'in fruits)
+print('grape'not in fruits)
+        
     
-    while True:
-        balance()
-        choice = int(input("Enter your choice (1-4): "))
-        
-        if choice == 1:
-            print(f"Your current balance is: ₹{balance}")
-        
-        elif choice == 2:
-            amount = int(input("Enter amount to deposit: "))
-            balance += amount
-            print(f"₹{amount} deposited successfully.")
-            print(f"Updated balance: ₹{balance}")
-        
-        elif choice == 3:
-            amount = int(input("Enter amount to withdraw: "))
-            if amount > balance:
-                print("Insufficient balance!")
-            else:
-                balance -= amount
-                print(f"₹{amount} withdrawn successfully.")
-                print(f"Updated balance: ₹{balance}")
-        
-        elif choice == 4:
-            print("Thank you for using our service. Goodbye!")
-            break
-        
-        else:
-            print("Invalid choice! Please select between 1-4.")
-
-balance()
+    
+    
